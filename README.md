@@ -2,7 +2,7 @@
 
 An automated SEO-focused blog post generator that leverages OpenAI's GPT models to create structured content with affiliate links. This Flask-based application performs "SEO research" through mock data and generates daily blog posts automatically.
 
-## 🎯 Project Overview
+## Project Overview
 
 This application demonstrates a complete AI-powered content generation pipeline, featuring:
 
@@ -12,7 +12,7 @@ This application demonstrates a complete AI-powered content generation pipeline,
 - **RESTful API**: Clean Flask endpoints for both interactive and programmatic access
 - **File-based Storage**: JSON output with timestamped files for easy tracking
 
-## 🚀 How All Deliverables Were Covered
+## How All Deliverables Were Covered
 
 ### ✅ **Core Flask Application (app.py)**
 
@@ -123,7 +123,7 @@ src/html/
 
 
 
-## 🛠️ Technical Architecture
+## Technical Architecture
 
 ### Flask Application Structure
 ```
@@ -147,7 +147,7 @@ src/
 OPENAI_API_KEY=your_openai_api_key_here
 ```
 
-## 📡 API Usage Examples
+## API Usage Examples
 
 ### 1. Interactive Web Request
 ```bash
@@ -211,7 +211,7 @@ curl "http://localhost:5000/generate?keyword=smart%20watches"
 </html>
 ```
 
-## 🔄 Automation Features
+## Automation Features
 
 ### Daily Content Generation
 - **Frequency**: Every 24 hours
@@ -226,7 +226,7 @@ SCHEDULER_GENERATION_INTERVAL = 1        # Days between generations
 SCHEDULER_GENERATION_KEYWORD = "wireless earbuds"  # Target keyword
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Installation
 ```bash
@@ -251,7 +251,7 @@ python app.py
 curl "http://localhost:5000/generate?keyword=test"
 ```
 
-## 📁 File Output Examples
+## File Output Examples
 
 Generated content is automatically saved with descriptive filenames:
 - Manual requests: `keyword_YYYYMMDD-HHMMSS.html`
@@ -259,7 +259,7 @@ Generated content is automatically saved with descriptive filenames:
 
 Each file contains the complete generation context: keyword, SEO metrics, and AI-generated content with processed affiliate links.
 
-## 🔧 Customization Options
+## Customization Options
 
 - **SEO Data**: Add more keywords to the mock database in `seo_fetcher.py`
 - **AI Model**: Change `MODEL` variable in `ai_generator.py` (gpt-4, gpt-3.5-turbo)
@@ -270,7 +270,7 @@ Each file contains the complete generation context: keyword, SEO metrics, and AI
 This implementation provides a complete, production-ready Flask application that demonstrates all the core concepts of automated SEO content generation with AI assistance.
 
 
-## 📺 (Additional) Streamlit UI
+## (Additional) Streamlit UI
 
 To run the interactive Streamlit interface, run the following command from the root of the project in a separate terminal:
 
